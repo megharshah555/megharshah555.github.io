@@ -1,0 +1,14 @@
+.bg-main{
+    background: rgb(198,239,223);
+    font-family: 'Playfair Display', serif;
+    color: #2e2e47;
+}
+
+.main-section{
+    /* background-image : linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+     url("../images/main-bg.jpg");
+     background-size: cover; */
+}
+.main-section .display-1{
+    font-weight: 500;
+}
