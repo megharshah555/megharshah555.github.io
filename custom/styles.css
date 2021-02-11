@@ -1,9 +1,11 @@
 .bg-main{
     background: rgb(198,239,223);
     font-family: 'Playfair Display', serif;
-    color: #2e2e47;
+    color: rgb(46, 46, 71);
 }
 
+
+/* Home Section */
 .main-section{
     /* background-image : linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
      url("../images/main-bg.jpg");
@@ -12,3 +14,59 @@
 .main-section .display-1{
     font-weight: 500;
 }
+#aboutLink:hover{
+    text-shadow: 0 0 5px #868686;
+}
+
+
+
+
+
+/* Footer */
+.footer-container{
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    z-index: 5;
+}
+.footer-container .menu{
+    height: 100px;
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: rgba(198,239,223,0.7);
+}
+.footer-container .menu .menu-item{
+    text-shadow: 0 0 1px #e2e2ee;
+    transition: 300ms;
+    cursor: pointer;
+}
+.footer-container .menu .menu-item:hover{
+    font-size: 1.2em;
+}
+
+
+
+/* Mobile CSS **/
+@media only screen and  (max-width:768px){
+    body{
+        margin-bottom: 100px;
+    }
+    .footer-container{
+        bottom: 0;
+    }
+    .footer-container .menu{
+        font-size: 10px;
+        width: 100%;
+        padding: 5px;
+        height: auto;
+    }
+    .footer-container .menu .menu-item h2{
+        font-size: 15px;
+    }
+}
+/* Mobile CSS **/
