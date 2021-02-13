@@ -16,7 +16,7 @@
     font-weight: 500;
 }
 #aboutLink:hover{
-    text-shadow: 0 0 5px #868686;
+  text-shadow: 0 0 5px #868686;
 }
 
 
@@ -31,6 +31,30 @@ h5{
 /*  Common Section */
 
 
+
+/* Contact Section */
+.contact-icon-link{
+  width: 150px;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+@keyframes mymove {
+  from {
+    border-radius: 50%;
+    border-color: transparent;
+  }
+  to {
+    border-radius: 5px;
+    border-color: rgb(46, 46, 71);
+  }
+}
+.contact-icon-link:hover{
+  animation: mymove 1s forwards;
+}
+.contact-icon-link:hover i{
+  text-shadow: 0 0 5px #868686;
+}
+/* Contact Section */
 
 
 /* Footer */
@@ -237,6 +261,9 @@ h5{
     }
     .footer-container .menu .menu-item h2{
         font-size: 15px;
+    }
+    .contact-icon-link i{
+      font-size: 5em;
     }
 }
 /* Mobile CSS **/
